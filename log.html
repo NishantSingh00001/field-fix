@@ -1,0 +1,14 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>FieldFix — Service log</title><meta name="description" content="Track service work, what to monitor and what is urgent, per asset.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Service log</div><h1>Keep the <em>record</em>.</h1></section>
+  <div class="grid2">
+    <div class="col"><section class="card reveal"><div class="ch"><h2>Add entry</h2></div><div style="padding:20px">
+      <div class="fld" style="margin-top:0"><label>Asset</label><input class="inp" id="asset" placeholder="Generator #2"></div>
+      <div class="fld"><label>Work done</label><input class="inp" id="work" placeholder="Replaced fuel filter"></div>
+      <div class="fld"><label>Status</label><select class="inp" id="status"><option>Done</option><option>Monitor</option><option>Urgent</option></select></div>
+      <button class="save" data-press id="add" style="margin-top:16px">Log entry</button>
+    </div></section></div>
+    <div class="col"><section class="card reveal"><div class="ch"><h2>History</h2></div><div style="padding:18px" id="list"></div></section></div>
+  </div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

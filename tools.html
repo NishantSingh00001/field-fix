@@ -1,0 +1,14 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>FieldFix — Calculators</title><meta name="description" content="Field calculators: Ohm's law, torque conversion and wire ampacity.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell"><div class="page">
+  <section class="phead" style="padding-bottom:24px"><div class="eyebrow">Field calculators</div><h1>Run the <em>numbers</em>.</h1></section>
+  <div class="grid2 even">
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Ohm's law</h2></div><div style="padding:20px"><div class="row"><div class="fld" style="margin:0;flex:1;min-width:90px"><label>Volts</label><input class="inp" id="o_v" type="number"></div><div class="fld" style="margin:0;flex:1;min-width:90px"><label>Amps</label><input class="inp" id="o_i" type="number"></div><div class="fld" style="margin:0;flex:1;min-width:90px"><label>Ohms</label><input class="inp" id="o_r" type="number"></div></div><div class="metric" style="margin-top:18px"><div class="n" id="o_out"></div><div class="l">enter any two</div></div></div></section>
+      <section class="card reveal"><div class="ch"><h2>Wire ampacity</h2></div><div style="padding:20px"><div class="fld" style="margin-top:0"><label>Copper size (mm²)</label><select class="inp" id="w_g"></select></div><div class="metric" style="margin-top:18px"><div class="n" id="w_out"></div><div class="l" id="w_note"></div></div></div></section>
+    </div>
+    <div class="col">
+      <section class="card reveal"><div class="ch"><h2>Torque converter</h2></div><div style="padding:20px"><div class="row"><div class="fld" style="margin:0;flex:1;min-width:110px"><label>N·m</label><input class="inp" id="t_nm" type="number"></div><div class="fld" style="margin:0;flex:1;min-width:110px"><label>ft·lb</label><input class="inp" id="t_fl" type="number"></div></div><div class="metric" style="margin-top:18px"><div class="n" id="t_out"></div><div class="l">type in either box</div></div></div></section>
+    </div>
+  </div>
+</div></main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>
